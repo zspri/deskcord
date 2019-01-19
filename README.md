@@ -30,3 +30,7 @@ electron .
 #### Chat area
 
 ![Screenshot](https://cdn.discordapp.com/attachments/376375897109954560/535995914192420875/electron_2019-01-18_20-31-10.png)
+
+#### Full perspective
+
+![Screenshot](https://cdn.discordapp.com/attachments/376375897109954560/535997485861306388/unknown.png)
