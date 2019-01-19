@@ -22,3 +22,11 @@ electron .
 ```
 
 ## Screenshots
+
+#### Channel Drawer
+
+![Screenshot](https://cdn.discordapp.com/attachments/376375897109954560/535995913181593600/electron_2019-01-18_20-31-32.png)
+
+#### Chat area
+
+![Screenshot](https://cdn.discordapp.com/attachments/376375897109954560/535995914192420875/electron_2019-01-18_20-31-10.png)
