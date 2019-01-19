@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/func.js"></script>
+</head>
+<body>
+    <div class="sidenav hidden">
+        <div class="guilds">
+            <!--<a class="guild"><img src="assets/default_avatar_0.jpg" width="35" height="35"></a>
+            <a class="guild active"><img src="assets/default_avatar_0.jpg" width="35" height="35"></a>-->
+        </div>
+        <div>
+            <div class="nav">
+                <i class="fas fa-times" onclick="toggleNav()"></i>
+                &ensp;
+                <span class="guild-name">test server long name</span>
+            </div>
+            <div class="guild-channels">
+                <div class="channel">
+                    <span class="channelprefix">#</span><span class="channel-name">general</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <i class="fas fa-bars" onclick="toggleNav()"></i>
+        &emsp;
+        <span class="channelprefix">#</span><span class="channel-name">general</span>
+    </div>
+    <div class="main">
+        <div class="message">
+            <div class="data">
+                <div class="author">Example</div>
+                <div class="content">my example content<br>another line</div>
+            </div>
+        </div>
+        <div style="text-align:center">
+            <svg class="circle-loader progress" width="40" height="40" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="15"></svg>
+        </div>
+    </div>
+    <script>var renderer = require('./renderer.js')</script>
+</body>
+</html>

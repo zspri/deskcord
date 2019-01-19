@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #363941;
+    color: white;
+}
+
+.nav {
+    padding: .8rem;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    background-color: #363940;
+    color: rgba(255,255,255,.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10001;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    user-select: none;
+}
+
+.nav .fas {
+    opacity: .75;
+    cursor: pointer;
+}
+
+.main {
+    margin-top: 44.59px;
+    padding: 1rem;
+}
+
+.sidenav {
+    z-index: 10002;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: #303136;
+    transition: right .75s;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.sidenav.hidden {
+    right: 100%;
+}
+
+.sidenav .nav {
+    background-color: transparent;
+    display: block;
+    position: static;
+    box-shadow: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    box-shadow: none;
+    border: none;
+    align-items: stretch;
+}
+
+.sidenav .guilds {
+    background-color: #202225;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 51px;
+    height: 100%;
+}
+
+.guilds .guild {
+    cursor: pointer;
+    margin: 8px;
+    margin-left: 0;
+    padding-left: 8px;
+    margin-bottom: 0;
+    display: block;
+}
+
+.guilds .guild img {
+    height: 35px;
+    width: 35px;
+    border-radius: 17.5px;
+    transition: .3s;
+}
+
+.guilds .guild img:hover {
+    border-radius: 10px;
+}
+
+.guilds .guild.active {
+    border-left: 3px solid rgba(255,255,255,.7);
+    padding-left: 5px;
+}
+
+.guilds .guild.active img {
+    border-radius: 10px;
+}
+
+.guild-channels {
+    padding: .5rem;
+    overflow-y: scroll;
+    max-height: 255px;
+}
+
+.channel {
+    padding: .5rem;
+    border-radius: 3px;
+    font-size: .9em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.channel:hover {
+    background-color: rgba(0,0,0,.1);
+}
+
+.channel.active {
+    background-color: rgba(255,255,255,.1);
+}
+
+.channelprefix {
+    font-weight: 500;
+    opacity: .5;
+}
+
+.message img.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 12.5px;
+    flex: 0 0;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+.message .data {
+    display: inline-block;
+}
+
+.message .author {
+    color: white;
+}
+
+.message .author small {
+    opacity: .8;
+}
+
+.message .content {
+    color: rgba(255,255,255,.6);
+    font-size: .9em;
+}
+
+.circle-loader {
+	fill: transparent;
+	stroke: #7289da;
+	stroke-width: 5;
+	animation: dash 1.5s ease infinite,rotate 1.5s linear infinite;
+}
+
+@keyframes dash {
+	0% {
+		stroke-dasharray: 1,95;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 85,95;
+		stroke-dashoffset: -25;
+	}
+	100% {
+		stroke-dasharray: 85,95;
+		stroke-dashoffset: -93;
+	}
+}
+
+@keyframes rotate {
+	0% {transform: rotate(0deg); }
+	100% {transform: rotate(360deg); }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+.guilds::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #363941;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(35, 39, 42);
+    border-radius: 5px;
+}
